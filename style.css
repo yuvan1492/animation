@@ -1,0 +1,138 @@
+body{
+    background-color: black;
+}
+.title{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: aliceblue;
+    cursor: pointer;
+    animation-name: demo;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 4;
+}
+@keyframes demo{
+    from{}
+    to{
+        transform: scale(.85) translateX(400px);
+    }
+}
+
+.section-center{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    animation-name: one;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+}
+@keyframes one{
+    from{}
+    to{
+        transform: scale(.85) rotate(180deg);
+    }
+}
+.about-img-container{
+    height: fit-content;
+    width: fit-content;
+}
+.about-img{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 300px;
+    width: 650px;
+    border-radius: 19px;
+
+}
+.btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:space-evenly;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.tab-btn{
+    text-align: center;
+    padding: 8px;
+    background-color:darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    box-decoration-break:none;
+    transition: all .2s;
+}
+.active{
+    display: block;
+    transform: scale(.95);
+}
+.content{
+    top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    display: none;
+}
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+
+}
+.super-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+}
+.tab-btn.active{
+    background-color:aliceblue;
+    box-shadow: 12px;
+}
+
+.content.active{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    display: block;
+}
+.tab-btn:active{
+    background-color:aliceblue;
+    box-sizing: border-box;
+    box-shadow: 20px;
+}
+.about-content{
+    height: 350px;
+    width: 700px;
+    border-radius: 19px;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+}
+@media (max-width: 800px) {
+    .section-center{
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-radius: 25px;
+        align-items: center;
+    }
+   
+}
+
+
+
+
+
+
